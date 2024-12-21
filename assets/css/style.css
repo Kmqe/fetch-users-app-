@@ -1,0 +1,152 @@
+/*============ GOOGLE FONTS ============*/
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+/*============ Custom Property ============*/
+:root {
+    --font-primary: "Tajawal", serif;
+}
+
+/*============ Global Rules ============*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-family: var(--font-primary);
+    overflow-x: hidden;
+    height: 100vh;
+    direction: rtl;
+}
+ul {
+    list-style: none;
+}
+a,
+img,
+span,
+input,
+button {
+    display: block;
+}
+input,
+button {
+    outline: none;
+    border: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/*============ #### ============*/
+
+.search-container {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.search-container form {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.search-container form input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+}
+
+.search-container form input[type="submit"] {
+    padding: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+.users {
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    .users {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .users {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.user {
+    background-color: #2196F3;
+    color: white;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+.box-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.box-info:not(:first-of-type) {
+    margin-top: 15px;
+}
+
+.box-info h1:first-of-type {
+    flex-shrink: 3;
+}
+
+.box-info h1 {
+    font-size: 14px;
+    margin: 0;
+}
